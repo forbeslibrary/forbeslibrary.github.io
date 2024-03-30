@@ -25,7 +25,7 @@
 		const container = document.getElementById("archive-org");
 		const url = "https://forbeslibrary.org" + window.location.pathname;
 		const waybackUrl = "https://web.archive.org/web/*/" + url;
-		container.innerHTML = `The Wayback machine may have an archived copy of ${url}:<br/><a href="${waybackUrl}">${waybackUrl}</a>`;
+		container.innerHTML = `The Wayback machine may have an <a href="${waybackUrl}">$archived copy</a> of <strong>${url}</strong>:<br/>`;
 	</script>
 	</body>
 </html>
