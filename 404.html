@@ -19,34 +19,12 @@
 	<h1><img src="horizontal-forbes-logo-cropped.png" alt="Forbes Library" style="max-width:100%;"></h1>
 	<h2>We'll Be Back Soon</h2>
 	<p>Our website is down. We're working on it and it should be back soon.</p>
-	<h2>Links</h2>
-	<ul>
-		<li><a href="https://northamptn.cwmars.org/MyAccount/Home">My Account</a></li>
-		<li><a href="https://northamptn.cwmars.org/">Library Catalog</a> - Search for books and more.</li>
-		<li><a href="https://cwmars.overdrive.com/">Overdrive</a> - eBooks and eAudiobooks.</li>
-		<li><a href="https://forbes.kanopy.com">Kanopy</a> - Streaming movies</li>
-		<li><a href="https://forbeslibrary.libcal.com/calendar/events?cid=228&t=d&d=0000-00-00&cal=228&inc=0">Forbes Library Events Calendar</a></li>
-		<li><a href="https://forbeslibrary.libcal.com/spaces?lid=1965">Meeting Room Reservations</a></li>
-		<li><a href="https://secure.lglforms.com/form_engine/s/ZVdWkVppx5TKnqzj1-lj-Q">Make a gift</a> &#127873;</li>
-	</ul>
-	<h3>Research Links</h3>
-	<ul>
-		<li><a href="https://login.ezno.ez.cwmars.org:7043/">Forbes Library Databases</a></li>
-		<li><a href="https://www.galepages.com/mlin_w_forbes">Gale Databases via the MBLC</a></li>
-		<li><a href="https://www.bpl.org/resource/">Databases via the Boston Public Library</a></li>
-		<li><a href="https://archives.forbeslibrary.org">archives.forbeslibrary.org</a> - online local history collections</li>
-	</ul>
-	<h2>Contact</h2>
-	<address>
-		<dl>
-			<dt>phone</dt><dd><a href="tel:+1-413-587-1011">413-587-1011</a></dd>
-			<dt>email</dt><dd><a href="reference@forbeslibrary.org">reference@forbeslibrary.org</a></dd>
-			<dt>Facebook</dt><dd><a href="https://www.facebook.com/Forbes.Library">Forbes.Library</a></dd>
-			<dt>Instagram</dt><dd><a href="https://www.instagram.com/ForbesLibrary/">ForbesLibrary</a></dd>
-		</dl>
-		<strong>Forbes Library</strong><br>
-		20 West Street<br>
-		Northampton, MA 01060
-	</address>
+	<p>Please visit <a href="https://status.forbeslibrary.org">status.forbeslibrary.org</a> for more information and helpful links.</p>
+	<div id="archive-org"></div>
+	<script>
+		const container = document.getElementById("archive-org");
+		const waybackUrl = "https://web.archive.org/web/*/https://forbeslibrary.org" + window.location.pathname;
+		container.innerHTML = `The Wayback machine may have an archived copy of the page you are looking for:<br/> <a href="${waybackUrl}">${waybackUrl}</a>`;
+	</script>
 	</body>
 </html>
