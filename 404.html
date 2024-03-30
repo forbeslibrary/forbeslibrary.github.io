@@ -23,8 +23,9 @@
 	<div id="archive-org"></div>
 	<script>
 		const container = document.getElementById("archive-org");
-		const waybackUrl = "https://web.archive.org/web/*/https://forbeslibrary.org" + window.location.pathname;
-		container.innerHTML = `The Wayback machine may have an archived copy of the page you are looking for:<br/> <a href="${waybackUrl}">${waybackUrl}</a>`;
+		const url = "https://forbeslibrary.org" + window.location.pathname;
+		const waybackUrl = "https://web.archive.org/web/*/" + url;
+		container.innerHTML = `The Wayback machine may have an <a href="${waybackUrl}">archived copy of ${url}</a>`;
 	</script>
 	</body>
 </html>
